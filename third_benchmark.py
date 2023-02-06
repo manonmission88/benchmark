@@ -6,12 +6,13 @@ import time
 
 start_time = time.time()
 #creating the array 
-array_elements = [0] * (5*10**9)
+array_elements = [None] * (5*10**5)
 
-#reading and writing 
-for i in range(5*10**9):
-    array_elements[i] = i 
-    another_array = array_elements[i]
+#reading and writin
+for i in range(10**4):
+    for j in range(5*10**5):
+        array_elements[j] = j 
+        another_array = array_elements[j]
 
 end_time = time.time()
 total_time_taken = end_time -start_time 
